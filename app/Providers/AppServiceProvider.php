@@ -24,6 +24,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        /*
+         * git switch main -> borra este código
+         * git switch deployment -> regresa el código
+         */
         if( $this->app->environment('production') ) {
             URL::forceScheme('https');
         }
